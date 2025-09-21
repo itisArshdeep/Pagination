@@ -16,7 +16,7 @@ const App = () => {
 
   useEffect(() => {
     fetchdata();
-  }, [products])
+  }, [])
 
   const startPage = currPage * 12;
   const endPage = startPage + 12;
@@ -28,8 +28,8 @@ const App = () => {
       {products.slice(startPage, endPage).map((e, i) => <> <ProductCard key={e.id} id={e.id} title={e.title} image={e.thumbnail} /></>)}
     </div>
   </div>
-  <Pagination currPage={currPage} setCurrPage={setCurrPage} TotalPages={TotalPages} />
-    </>}
+    <Pagination currPage={currPage} setCurrPage={setCurrPage} TotalPages={TotalPages} />
+  </>}
   </>
   )
 }
