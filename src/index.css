@@ -1,0 +1,51 @@
+.container{
+    display: flex ;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 450px;
+}
+.product{
+    height: 100px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 12px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.product img {
+    height: 50px;
+    width: 50px;
+}
+.HomePage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.pages{
+    padding: 2px;
+    margin: 2px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+.pagination{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.active{
+    background-color: blue;
+    color: white;
+}
+.pages:hover{
+    background-color: aqua;
+    opacity: 20%;
+}
